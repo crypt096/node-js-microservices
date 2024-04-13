@@ -10,8 +10,9 @@ broker.createService({
         list() {
             return users;
         },
-        add(ctx) {
-            users.push(ctx.params);
+        createUser(ctx) {
+          const { username, email } = ctx.params;
+          const newUser = {};
         }
     }
 });
