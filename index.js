@@ -4,7 +4,7 @@ const broker = new ServiceBroker();
 
 // Greeter Service
 broker.createService({
-  name: 'Greeter',
+  name: 'greeter',
   actions: {
     sayHello(ctx) {
       return `Hello ${ctx.params.name}`;
