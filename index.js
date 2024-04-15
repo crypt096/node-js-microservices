@@ -10,6 +10,7 @@ async function startApp() {
       email: 'john.doe@example.com',
     });
     console.log('New user:', newUser);
+    const users = await UserService.getUsers('user.getUsers');
   } catch (error) {
     
   }
