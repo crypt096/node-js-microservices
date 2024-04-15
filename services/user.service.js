@@ -14,7 +14,9 @@ broker.createService({
         createUser(ctx) {
           const { username, email } = ctx.params;
           const newUser = {
-
+            id: generateId(),
+            username,
+            email
           };
         }
     }
