@@ -1,7 +1,9 @@
 import UserService from './services/user.service.js';
+import EmailService from './services/email.service.js';
 
 async function startApp() {
   await UserService.start();
+  await EmailService.start();
 
   try {
     // Simulate user creation
