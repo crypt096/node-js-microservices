@@ -29,6 +29,8 @@ async function startApp() {
     console.log('Error: ' + error)
   } finally {
     await UserService.stop();
+    await EmailService.stop();
+    await AuthService.stop();
   }
 }
 
