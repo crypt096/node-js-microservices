@@ -23,8 +23,14 @@ async function startApp() {
       subject: 'Welcome to the app!',
       content: 'Thank you for joining our app!',
     });
-
     console.log(email);
+
+    // Simulate auth
+    const authResult = await AuthService.call('auth.authUser', {
+      username: newUser.username,
+      password: 'password',
+    });
+    console.log('Auth result:', authResult);
   } catch (error) {
     console.log('Error: ' + error)
   } finally {
