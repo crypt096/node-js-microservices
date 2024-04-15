@@ -7,9 +7,6 @@ const users = [];
 broker.createService({
     name: 'users',
     actions: {
-        list() {
-            return users;
-        },
         createUser(ctx) {
           const { username, email } = ctx.params;
           const newUser = {};
