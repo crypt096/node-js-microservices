@@ -27,7 +27,7 @@ async function startApp() {
 
     // Simulate auth
     const authResult = await AuthService.call('auth.authUser', {
-      username: newUser.username,
+      username: 'admin',
       password: 'password',
     });
     console.log('Auth result:', authResult);
