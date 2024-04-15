@@ -18,6 +18,8 @@ broker.createService({
             username,
             email
           };
+          users.push(newUser);
+          return newUser;
         }
     }
 });
