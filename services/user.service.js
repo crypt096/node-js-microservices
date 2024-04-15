@@ -9,7 +9,7 @@ function generateId() {
 const users = [];
 
 broker.createService({
-    name: 'users',
+    name: 'user',
     actions: {
         async createUser(ctx) {
           const { username, email } = ctx.params;
