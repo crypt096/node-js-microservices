@@ -20,6 +20,9 @@ broker.createService({
           };
           users.push(newUser);
           return newUser;
+        },
+        getUsers() {
+          return users;
         }
     }
 });
