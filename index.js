@@ -18,3 +18,5 @@ async function startApp() {
     await UserService.stop();
   }
 }
+
+startApp();
