@@ -14,6 +14,13 @@ async function startApp() {
     console.log('New user: ', newUser);
     const users = await UserService.call('user.getUsers');
     console.log('All users: ', users);
+
+    // Simulate email sending
+    const email = await EmailService.call('email.sendEmail', {
+      recipient: newUser.email,
+      subject: 'Welcome to the app!',
+      content: 'Thank you for joining our app!',
+    });
   } catch (error) {
     console.log('Error: ' + error)
   } finally {
