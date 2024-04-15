@@ -5,7 +5,7 @@ async function startApp() {
 
   try {
     // Simulate user creation
-    const newUser = await UserService.createUser('user.createUser', {
+    const newUser = await UserService.call('user.createUser', {
       name: 'John Doe',
       email: 'john.doe@example.com',
     });
