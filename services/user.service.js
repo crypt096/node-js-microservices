@@ -11,7 +11,7 @@ const users = [];
 broker.createService({
     name: 'users',
     actions: {
-        createUser(ctx) {
+        async createUser(ctx) {
           const { username, email } = ctx.params;
           const newUser = {
             id: generateId(),
@@ -21,7 +21,7 @@ broker.createService({
           users.push(newUser);
           return newUser;
         },
-        getUsers() {
+        async getUsers() {
           return users;
         },
     }
