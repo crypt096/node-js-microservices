@@ -21,6 +21,8 @@ async function startApp() {
       subject: 'Welcome to the app!',
       content: 'Thank you for joining our app!',
     });
+
+    console.log(email);
   } catch (error) {
     console.log('Error: ' + error)
   } finally {
