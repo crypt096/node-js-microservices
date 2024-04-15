@@ -9,6 +9,7 @@ async function startApp() {
       name: 'John Doe',
       email: 'john.doe@example.com',
     });
+    console.log('New user:', newUser);
   } catch (error) {
     
   }
