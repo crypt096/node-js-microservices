@@ -23,6 +23,8 @@ broker.createService({
         },
         getUsers() {
           return users;
-        }
+        },
     }
 });
+
+export default broker;
