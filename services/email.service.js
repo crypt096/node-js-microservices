@@ -9,6 +9,7 @@ broker.createService({
         const { recipient, subject, content } = ctx.params;
         // Simulated email logic
         console.log(`Sending email to ${recipient} with subject ${subject} and content ${content}`);
+        return `Email sent to ${recipient}`;
       }
     }
 });
