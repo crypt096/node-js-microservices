@@ -3,7 +3,7 @@ import { ServiceBroker } from 'moleculer';
 const broker = new ServiceBroker();
 
 function generateId() {
-  return Math.floor(Math.random() * 10000000);
+  return Math.floor(Math.random() * 1000 + 1);
 }
 
 const users = [];
